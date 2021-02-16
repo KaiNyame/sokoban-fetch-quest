@@ -5,14 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Hyaku-Tou-Sokoban</title>
   </head>
-  <body style="text-align: center; overflow: hidden;">
+  <body style="text-align: center; overflow: hidden; display: flex; align-items: center; justify-content:center;">
     <canvas id="unity-canvas" style="width: 1000px; height: 1000px; background: #231F20"></canvas>
     <script src="Build/Portfolio-HTSB.loader.js"></script>
     <script>
 		var canvas = document.querySelector("#unity-canvas");
 
 
-		var size = Math.min(window.innerWidth, window.innerHeight);
+		var size = Math.round( Math.min(window.innerWidth, window.innerHeight)* 0.85);
 		canvas.width = size;
 		canvas.height = size;
 		canvas.style.width = `${size}px`;
